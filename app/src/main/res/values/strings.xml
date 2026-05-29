@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">StENik</string>
+
+    <string name="msg_grantNotification">Please grant notification permission for this feature</string>
+    <string name="msg_authFailed">Authentication failed</string>
+    <string name="msg_authSuccess">Authentication Success</string>
+    <string name="msg_emailPassEmpty">Authentication failed. Email, password is empty</string>
+    <string name="msg_createUserFailed">Create user failed</string>
+    <string name="msg_createUserSuccess">Create User success</string>
+    <string name="msg_outFailed">Out failed</string>
+    <string name="msg_outSuccess">Out Success</string>
+    <string name="msg_authDeleteFailed">Delete failed</string>
+    <string name="msg_authDeleteSuccess">Delete Success</string>
+    <string name="msg_grantMicrophone">Please grant microphone permission for this feature</string>
+
+
+
+    <string name="lbl_layoutHome">StENik</string>
+    <string name="lbl_layoutListen">Listen</string>
+    <string name="lbl_layoutAuthentification">Authentification</string>
+    <string name="lbl_layoutSettings">Settings</string>
+    <string name="lbl_layoutSettingsExtra">Extra</string>
+    <string name="lbl_notification">Dictionary reading is working now</string>
+    <string name="lbl_layoutVocabulary">Vocabulary</string>
+    <string name="lbl_layoutTest">Test</string>
+    <string name="lbl_layoutVocabularyEdit">Edit</string>
+    <string name="lbl_vocabulary">Vocabulary</string>
+    <string name="lbl_layoutVocabularyCustom">Custom</string>
+    <string name="lbl_database">Database</string>
+
+
+    <string name="txt_groupLanguage">Group of languages</string>
+    <string name="txt_mainLanguage">Main</string>
+    <string name="txt_firstLanguage">First</string>
+    <string name="txt_secondLanguage">Second</string>
+    <string name="txt_sortingBy">Text sorting method</string>
+    <string name="txt_variantsForTest">Number of options in the test</string>
+    <string name="txt_repeatListenAmount">Number of repetitions</string>
+    <string name="txt_readingSpeed">Reading speed</string>
+    <string name="txt_formula">Formula</string>
+    <string name="txt_cloud">Cloud</string>
+    <string name="txt_timeMillsSecForSpeech">Time for speech</string>
+    <string name="txt_attention">Attention!!!</string>
+    <string name="txt_replaceFromCloud">Do you want to replace everything with data from the cloud?</string>
+    <string name="txt_example">Example</string>
+    <string name="txt_selectCorrect">Select the correct translation</string>
+    <string name="txt_noLogin">You must sign in to your account</string>
+    <string name="txt_delayReadText">Text change delay</string>
+    <string name="txt_batterySet1">For running in the background</string>
+    <string name="txt_batterySet2">Set battery usage to Unrestricted</string>
+
+
+    <string name="rdb_smart">Smart</string>
+    <string name="rdb_level">Level</string>
+    <string name="rdb_id">Number of text</string>
+
+
+    <string name="cbx_backgroundListen">Play in background</string>
+    <string name="cbx_listenOnStarted">Listen on app launch</string>
+    <string name="cbx_repeatEverything">Repeat everything</string>
+    <string name="cbx_saveToCloud">Save to the cloud</string>
+    <string name="cbx_loadFromCloud">Download from the cloud</string>
+    <string name="cbx_textOnlyMainVocabulary">Filtered by vocabulary</string>
+
+
+    <string name="btn_startListen">Listen</string>
+    <string name="btn_stopListen">Stop</string>
+    <string name="btn_home">StENik</string>
+    <string name="btn_vocabulary">Vocabulary</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_listen">Listen</string>
+    <string name="btn_signIn">Sign In</string>
+    <string name="btn_signUp">Sign Up</string>
+    <string name="btn_signOut">Sign Out</string>
+    <string name="btn_signDelete">Delete Account</string>
+    <string name="btn_extraSettings">Extra settings</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_replaceFromCloud">Yes</string>
+    <string name="btn_database">Database</string>
+
+
+
+    <string name="btb_pausePlay">Pause/Play</string>
+    <string name="btb_play">Play</string>
+    <string name="btb_edit">Edit</string>
+    <string name="btb_create">New</string>
+    <string name="btb_custom">Custom</string>
+    <string name="btb_loadFromCloud">Load from cloud</string>
+    <string name="btb_saveToCloud">Save to cloud</string>
+    <string name="btb_loadExcel">Load from Excel file</string>
+    <string name="btb_donotknow">I don`t know</string>
+
+    <string name="mss_incorrect">Incorrect answer</string>
+    <string name="mss_correct">It`s ok!</string>
+
+
+</resources>

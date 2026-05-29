@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "389926385663",
+    "project_id": "stenik-f6863",
+    "storage_bucket": "stenik-f6863.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389926385663:android:d8dcbef270b8de8aff59ca",
+        "android_client_info": {
+          "package_name": "best.mobile.stenik"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxYyzK3w7JA3vaAnb-befN0Uxx1LagHlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

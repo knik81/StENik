@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StENik</string>
+
+
+    <string name="msg_grantNotification">Пожалуйста разрешите выводить уведомления. Это необходимо для данной функции</string>
+    <string name="msg_authFailed">Аутентификация не выполнена</string>
+    <string name="msg_authSuccess">Вы вошли</string>
+    <string name="msg_emailPassEmpty">Аутентификация  не выполнена. Эл.почта, пароль пустые</string>
+    <string name="msg_createUserFailed">Создание аккаунта не выполнено</string>
+    <string name="msg_createUserSuccess">Аккаунт создана</string>
+    <string name="msg_outFailed">Ошибка выхода</string>
+    <string name="msg_outSuccess">Вы вышли</string>
+    <string name="msg_authDeleteFailed">Удаление аккаунта выполнено</string>
+    <string name="msg_authDeleteSuccess">Ошибка при удалении аккаунта</string>
+    <string name="msg_grantMicrophone">Пожалуйста разрешите доступ к микрофону. Это необходимо для данной функции</string>
+
+
+    <string name="lbl_layoutHome">StENik</string>
+    <string name="lbl_layoutListen">Слушать</string>
+    <string name="lbl_layoutAuthentification">Регистрация</string>
+    <string name="lbl_layoutSettings">Настройки</string>
+    <string name="lbl_layoutSettingsExtra">Дополнительно</string>
+    <string name="lbl_notification">Чтение словаря</string>
+    <string name="lbl_layoutVocabulary">Словарь</string>
+    <string name="lbl_layoutTest">Тест</string>
+    <string name="lbl_layoutVocabularyEdit">Редактировать</string>
+    <string name="lbl_vocabulary">Словарь</string>
+    <string name="lbl_layoutVocabularyCustom">Настройка словаря</string>
+    <string name="lbl_database">Данные</string>
+
+
+    <string name="txt_groupLanguage">Набор языков</string>
+    <string name="txt_mainLanguage">Основной</string>
+    <string name="txt_firstLanguage">Первый</string>
+    <string name="txt_secondLanguage">Второй</string>
+    <string name="txt_sortingBy">Метод сортировки текста</string>
+    <string name="txt_variantsForTest">Число вариантов при тестировании</string>
+    <string name="txt_repeatListenAmount">Количество повторений при прослушивании</string>
+    <string name="txt_readingSpeed">Скорость чтения</string>
+    <string name="txt_formula">Формула</string>
+    <string name="txt_cloud">Облако</string>
+    <string name="txt_timeMillsSecForSpeech">Впемя работы микрофона</string>
+    <string name="txt_attention">Внимание!!!</string>
+    <string name="txt_replaceFromCloud">Заменить всё данными, загруженными из облака?</string>
+    <string name="txt_example">Образец</string>
+    <string name="txt_selectCorrect">Выбери правильный перевод</string>
+    <string name="txt_noLogin">Необходимо войти в аккаунт</string>
+    <string name="txt_delayReadText">Задержка смены текста</string>
+    <string name="txt_batterySet1">Для фоновой работы</string>
+    <string name="txt_batterySet2">Необходимо отключить ограничение питания приложения</string>
+
+
+    <string name="rdb_smart">Умный</string>
+    <string name="rdb_level">Уровень</string>
+    <string name="rdb_id">Идентификатор</string>
+
+
+    <string name="cbx_backgroundListen">Фоновое воспроизведение</string>
+    <string name="cbx_listenOnStarted">Слушать при запуске</string>
+    <string name="cbx_repeatEverything">Повторять все</string>
+    <string name="cbx_saveToCloud">Автосохранение в облако</string>
+    <string name="cbx_loadFromCloud">Автозагрузка из облака</string>
+    <string name="cbx_textOnlyMainVocabulary">Фильтровать по словарю</string>
+
+
+    <string name="btn_startListen">Слушать</string>
+    <string name="btn_stopListen">Стоп</string>
+    <string name="btn_home">StENik</string>
+    <string name="btn_vocabulary">Словарь</string>
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_listen">Слушать</string>
+    <string name="btn_signIn">Войти</string>
+    <string name="btn_signUp">Регистрация</string>
+    <string name="btn_signOut">Выйти</string>
+    <string name="btn_signDelete">Удалить аккаунт</string>
+    <string name="btn_extraSettings">Дополнительно</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_close">Закрыть</string>
+    <string name="btn_replaceFromCloud">Да</string>
+    <string name="btn_database">Хранилище</string>
+
+    <string name="btb_pausePlay">Пауза/Слушать</string>
+    <string name="btb_play">Слушать</string>
+    <string name="btb_edit">Редактировать</string>
+    <string name="btb_create">Добавить</string>
+    <string name="btb_custom">Настройка</string>
+    <string name="btb_loadFromCloud">Загрузить из облака</string>
+    <string name="btb_saveToCloud">Сохранить в облако</string>
+    <string name="btb_loadExcel">Загрузить из файла Excel</string>
+    <string name="btb_donotknow">Я не знаю</string>
+
+    <string name="mss_incorrect">Не верно</string>
+    <string name="mss_correct">Правильно!</string>
+
+
+</resources>
