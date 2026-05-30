@@ -69,7 +69,6 @@ class ServiceTTS : Service() {
         if (textStENikListTemp != null)
             textStENikList.addAll(textStENikListTemp) //чтобы не мучится с nullable типом, переложил с проверкой на null
 
-
         //загрузка languageList из intent
         val languageListTemp =
             intent?.getParcelableArrayListExtra(//получить все слова из ViewModel
@@ -78,7 +77,6 @@ class ServiceTTS : Service() {
             )?.toMutableList()
         if (languageListTemp != null)
             languageList.addAll(languageListTemp)//чтобы не мучится с nullable типом, переложил с проверкой на null
-
 
         //Запуск джоба. В нем будет запущен TTS
         if (!(jobTTS?.isActive ?: false))

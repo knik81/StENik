@@ -26,11 +26,11 @@ import kotlinx.coroutines.launch
 class TTStENik {
 
     //Создание джоба для того, чтобы можно было его остановить
-    var jobTTS: Job? = null
-    val pause = mutableStateOf(false)
-    var wakeLock: PowerManager.WakeLock? = null
+    private var jobTTS: Job? = null
+    private val pause = mutableStateOf(false)
+    private var wakeLock: PowerManager.WakeLock? = null
 
-    var tts: TextToSpeech? = null
+    private var tts: TextToSpeech? = null
 
     fun pauseTTS() {
         pause.value = !pause.value

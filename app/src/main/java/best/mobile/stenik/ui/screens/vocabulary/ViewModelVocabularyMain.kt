@@ -46,21 +46,23 @@ class ViewModelVocabularyMain(
         }
     }
 
-    val textStENikListListNotFiltered = mutableStateListOf<List<TextStENik>>()
+    private val textStENikListListNotFiltered = mutableStateListOf<List<TextStENik>>()
     private val _textStENikListList = mutableStateListOf<List<TextStENik>>()
     val textStENikListList
         get() = _textStENikListList
 
     val searchText = mutableStateOf("")
 
-    val vocabularyStENikList = mutableStateListOf<VocabularyStENik>()
+    private val vocabularyStENikList = mutableStateListOf<VocabularyStENik>()
 
     //отображение иконки поиска или панели с данными для поиска
     val showSearchIcon = mutableStateOf(true)
 
-    private val _vocabulary = mutableStateOf("")
+    /*private val _vocabulary = mutableStateOf("")
     val vocabulary
         get() = _vocabulary
+
+     */
 
 
     //фильтр по тексту

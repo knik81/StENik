@@ -40,7 +40,6 @@ fun ScreenVocabularyMain(
 
     val bottomPadding = remember { mutableStateOf(0.dp) }
 
-
     if (auth.currentUser != null) {
         iconIsEnable.value = true
     }

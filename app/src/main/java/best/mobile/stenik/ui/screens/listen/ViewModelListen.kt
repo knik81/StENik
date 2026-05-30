@@ -46,7 +46,7 @@ class ViewModelListen(
 ) : AndroidViewModel(application) {
 
     //экземпляр TTStENik из сервиса
-    val tTStENik: MutableStateFlow<TTStENik?> = MutableStateFlow(null)
+    private val tTStENik: MutableStateFlow<TTStENik?> = MutableStateFlow(null)
 
     //Состояние кнопок и переменные для их нажатия
     val pressButtonStop: MutableState<Boolean> = mutableStateOf(false)
@@ -204,7 +204,7 @@ class ViewModelListen(
         }
     }
 
-    fun isIgnoringBatteryOptimizations(context: Context): Boolean {
+    private fun isIgnoringBatteryOptimizations(context: Context): Boolean {
         val powerManager = context.getSystemService(Context.POWER_SERVICE) as PowerManager
         val packageName = context.packageName
         return powerManager.isIgnoringBatteryOptimizations(packageName)

@@ -58,7 +58,6 @@ class MainTTS(
         TTStENik.pauseTTS()
     }
 
-
     //получить текст из речи с микрофона
     private val _recognitionState = MutableStateFlow<SpeechRecognitionResultStENik?>(null)
     val recognitionState: StateFlow<SpeechRecognitionResultStENik?> =

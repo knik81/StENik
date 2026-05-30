@@ -76,24 +76,6 @@ class RepositoryMain(
 
                                 //сохраним словари
                                 repositoryROOM.prepareAndSaveVocabularyStENikList(resultStENik.data)
-                                /*
-                                //получение словаря
-                                val vocabularyNameList =
-                                    resultStENik.data.map { it.vocabulary }.distinct()
-                                val vocabularyStENikList = mutableListOf<VocabularyStENik>()
-                                vocabularyNameList.forEach { vocabularyName ->
-                                    vocabularyStENikList.add(
-                                        VocabularyStENik(
-                                            name = vocabularyName,
-                                            isSelected = true
-                                        )
-                                    )
-                                }
-                                //сохранение словаря
-                                if (vocabularyStENikList.isNotEmpty())
-                                    saveVocabulary(newVocabularyStENikList = vocabularyStENikList)
-
-                                 */
 
                                 withContext(Dispatchers.Main) {
                                     callBack(ResultStENik.Success("Ok" as T))

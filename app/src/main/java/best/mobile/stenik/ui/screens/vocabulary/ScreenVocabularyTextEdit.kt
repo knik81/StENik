@@ -55,7 +55,6 @@ fun ScreenVocabularyTextEdit(
         //Log.d(TAG_STENIK,"LaunchedEffect")
     }
 
-
     val bottomPadding = remember { mutableStateOf(0.dp) }
 
     val textStENikList = remember { viewModelVocabularyTextEdit.textStENikListForEditScreen }
@@ -88,7 +87,6 @@ fun ScreenVocabularyTextEdit(
                         viewModelVocabularyTextEdit.saveTextStENikListInDataBase(){
                             onClickBack()
                         }
-
                     }
                 }
             }
@@ -138,18 +136,6 @@ fun ScreenVocabularyTextEdit(
                     }
                 )
 
-
-                /*
-                TextFieldForVocabularyEdit(
-                    text = vocabulary.value,
-                    label = stringResource(R.string.lbl_vocabulary),
-                    onValueChange = { newVocabulary ->
-                        viewModelVocabularyEdit.setNewVocabulary(newVocabulary)
-                    }
-                )
-
-                 */
-
                 //отображение строк с текстом, иконками удаления и микрофона
                 LazyColumn(
                     modifier = Modifier.padding(bottom = bottomPadding.value),
@@ -157,7 +143,6 @@ fun ScreenVocabularyTextEdit(
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     //Log.d(TAG_STENIK, "отображение")
-
                     items(items = textStENikList) { textStENik ->
                         Row(
                             modifier = Modifier.fillMaxWidth(),
@@ -192,8 +177,6 @@ fun ScreenVocabularyTextEdit(
                                     tint = if (iconIsEnable.value) MaterialTheme.colorScheme.primary else Color.Gray
                                 )
                             }
-
-
                         }
                     }
                 }

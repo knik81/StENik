@@ -1,10 +1,8 @@
 package best.mobile.domain
 
 import best.mobile.data.firebase.Authentification
-import best.mobile.entities.AuthAnswer
 import best.mobile.entities.ResultStENik
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 
 class UseCaseAuthentification(
     private val authentification: Authentification,

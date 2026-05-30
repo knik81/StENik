@@ -56,23 +56,7 @@ class ReadExcelFile {
                     }
                     textTextStENikMap[name] = textTextStENikList
                 }
-                /*
-                dataExcel.forEach { row ->
-                    textTextStENikList.add(
-                        //Мэппинг из файла Excel в TextStENik
-                        TextStENik(
-                            id = row["id"].toString().toDouble().toInt(),
-                            language = LanguageStENik.EMPTY.stringToLanguageStENik(row["language"].toString()),
-                            vocabulary = row["vocabulary"].toString(),
-                            text = row["text"].toString(),
-                            level = row["level"].toString().toDouble().toInt(),
-                            idInit = row["vocabulary"].toString() + "_" + row["id"].toString()
-                                .toDouble().toInt()
-                        )
-                    )
-                }
 
-                 */
             } catch (e: Exception) {
                 if (tempFile.exists()) {
                     tempFile.delete()

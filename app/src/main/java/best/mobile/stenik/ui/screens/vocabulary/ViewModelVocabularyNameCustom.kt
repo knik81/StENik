@@ -1,7 +1,6 @@
 package best.mobile.stenik.ui.screens.vocabulary
 
 import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import best.mobile.domain.UseCaseRepository
@@ -23,15 +22,17 @@ class ViewModelVocabularyNameCustom(
         }
     }
 
-    val settings = mutableStateOf(useCaseRepository.getSettings())
+    //val settings = mutableStateOf(useCaseRepository.getSettings())
 
     val vocabularyList =
         mutableStateListOf<VocabularyStENik>()
 
-
+/*
     private val _vocabulary = mutableStateOf("")
     val vocabulary
         get() = _vocabulary
+
+ */
 
 
     fun saveVocabularyList(newVocabularyStENikList: List<VocabularyStENik>) {

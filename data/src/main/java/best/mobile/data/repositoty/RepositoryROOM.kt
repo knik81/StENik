@@ -16,11 +16,11 @@ class RepositoryROOM(
     private val stENikDatabase: StENikDatabase
 ) {
 
-    val stENikDao = stENikDatabase.getDao
+    private val stENikDao = stENikDatabase.getDao
 
     //заготовка для функции вставки записи
-    var newId = 0
-    var newInitId = 0
+    private var newId = 0
+    private var newInitId = 0
 
 
     // Загрузка слов

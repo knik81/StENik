@@ -10,12 +10,29 @@ import com.google.firebase.auth.FirebaseAuth
 class UseCaseRepository(
     private val repositoryMain: RepositoryMain
 ) {
+
     val textStENikListFlow = repositoryMain.textStENikListFlow
+
     suspend fun getTextStENikList() = repositoryMain.getTextStENikList()
 
     suspend fun getVocabularyStENikList() = repositoryMain.getVocabularyStENikList()
 
     val vocabularyStENikListFlow = repositoryMain.vocabularyStENikListFlow
+
+    suspend fun <T>loadFromExcelFile(absolutePath: String): ResultStENik<T> {
+        return repositoryMain.loadFromExcelFile(absolutePath)
+    }
+
+    suspend fun <T>loadFromFireStore(
+        auth: FirebaseAuth,
+        callBack: (ResultStENik<T>) -> Unit
+    ) {
+        repositoryMain.loadFromFireStore(auth = auth)
+        { resultStENik ->
+            callBack(resultStENik) }
+    }
+
+    fun getSettings(): SettingsStENik = repositoryMain.getSettings()
 
     fun <T>saveTextStenikEntityInFireStore(
         auth: FirebaseAuth,
@@ -26,12 +43,6 @@ class UseCaseRepository(
         }
     }
 
-    suspend fun <T>loadFromExcelFile(absolutePath: String): ResultStENik<T> {
-        return repositoryMain.loadFromExcelFile(absolutePath)
-    }
-
-
-    fun getSettings(): SettingsStENik = repositoryMain.getSettings()
 
     fun putSettings(settingsStENik: SettingsStENik) {
         repositoryMain.putSettings(settingsStENik)
@@ -45,12 +56,5 @@ class UseCaseRepository(
     suspend fun saveVocabulary(newVocabularyStENikList: List<VocabularyStENik>) =
         repositoryMain.saveVocabulary(newVocabularyStENikList = newVocabularyStENikList)
 
-    suspend fun <T>loadFromFireStore(
-        auth: FirebaseAuth,
-        callBack: (ResultStENik<T>) -> Unit
-    ) {
-        repositoryMain.loadFromFireStore(auth = auth)
-        { resultStENik ->
-            callBack(resultStENik) }
-    }
+
 }

@@ -10,7 +10,7 @@ object TtsStateManager {
     private val _isPaused = MutableStateFlow(false)
     val isPaused: StateFlow<Boolean> = _isPaused.asStateFlow()
 
-    val _tTStENik: MutableStateFlow<TTStENik?> = MutableStateFlow(null)
+    private val _tTStENik: MutableStateFlow<TTStENik?> = MutableStateFlow(null)
     val tTStENik: Flow<TTStENik?> = _tTStENik.asStateFlow()
 
     fun setTTStENik(setTTStENik: TTStENik) {

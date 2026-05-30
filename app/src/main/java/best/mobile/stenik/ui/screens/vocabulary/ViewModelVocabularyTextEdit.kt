@@ -42,7 +42,7 @@ class ViewModelVocabularyTextEdit(
     }
 
 
-    val settings = useCaseRepository.getSettings()
+    private val settings = useCaseRepository.getSettings()
     private val appContext = application.applicationContext
 
     private val _vocabulary = mutableStateOf<VocabularyStENik?>(null)

@@ -94,13 +94,6 @@ class RepositorySharedPreference(private val sharedPreferences: SharedPreference
             SharedPrefConst.B_COF,
             settingsStENikDefault.bCof
         )
-/*
-        val vocabularyMain = sharedPreferences.getString(
-            SharedPrefConst.VOCABULARY_MAIN,
-            settingsStENikDefault.vocabularyMain
-        ) ?: settingsStENikDefault.vocabularyMain
-
- */
 
         val timeMillsSecForSpeech = sharedPreferences.getInt(
             SharedPrefConst.TIME_MILLS_SEC,
@@ -127,7 +120,6 @@ class RepositorySharedPreference(private val sharedPreferences: SharedPreference
             settingsStENikDefault.delayReadText
         )
 
-        //throw IllegalArgumentException("Исключение - Шарик")
 
         return SettingsStENik(
             languageMain = LanguageStENik.EMPTY.stringToLanguageStENik(languageMain),
@@ -147,7 +139,6 @@ class RepositorySharedPreference(private val sharedPreferences: SharedPreference
             textSize = textSize,
             sigma = sigma,
             bCof = bCof,
-            //vocabularyMain = vocabularyMain,
             timeMillsSecForSpeech = timeMillsSecForSpeech,
             playBackground = inFon,
             vocabularyTextDefault = vocabularyTextDefault,
@@ -244,14 +235,6 @@ class RepositorySharedPreference(private val sharedPreferences: SharedPreference
                 settingsStENik.bCof
             )
 
-/*
-            putString(
-                SharedPrefConst.VOCABULARY_MAIN,
-                settingsStENik.vocabularyMain
-            )
-
- */
-
             putInt(
                 SharedPrefConst.TIME_MILLS_SEC,
                 settingsStENik.timeMillsSecForSpeech
@@ -277,9 +260,5 @@ class RepositorySharedPreference(private val sharedPreferences: SharedPreference
                 settingsStENik.delayReadText
             )
         }
-
-
     }
-
-
 }
