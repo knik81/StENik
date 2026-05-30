@@ -6,7 +6,7 @@ import best.mobile.data.firebase.Authentification
 import best.mobile.data.firebase.FireStoreDatabase
 import best.mobile.data.repositoty.RepositoryMain
 import best.mobile.data.repositoty.RepositoryROOM
-import best.mobile.data.repositoty.RepositorySharedPreference
+import best.mobile.data.repositoty.RepositorySharedPreferences
 import best.mobile.data.repositoty.file_excel.ReadExcelFile
 import best.mobile.data.repositoty.room.provideStENikDatabase
 import best.mobile.data.tts.MainTTS
@@ -24,7 +24,7 @@ val dataModuleKoin = module {
 
 
     singleOf(::RepositoryMain)
-    singleOf(::RepositorySharedPreference)
+    singleOf(::RepositorySharedPreferences)
 
     singleOf(::provideStENikDatabase)
     singleOf(::RepositoryROOM)

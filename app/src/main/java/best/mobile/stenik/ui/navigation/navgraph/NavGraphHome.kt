@@ -120,7 +120,9 @@ fun NavGraphHome(
                             showIconBack.value = true
                             navController.navigate(Graph.SETTINGS)
                         },
-                        onClickListen = { navController.navigate(BottomBarItems.Listen.route) },
+                        onClickListen = {
+                            navController.navigate(BottomBarItems.Listen.route)
+                        },
                         onClickAuthentification = {
                             layoutLabel.value =
                                 context.getString(R.string.lbl_layoutAuthentification)
@@ -284,7 +286,10 @@ fun NavGraphHome(
                     }
                 )
 
-                testNavGraph()
+                testNavGraph() {
+                    layoutLabel.value =
+                        context.getString(R.string.lbl_layoutTest)
+                }
 
             }
         }

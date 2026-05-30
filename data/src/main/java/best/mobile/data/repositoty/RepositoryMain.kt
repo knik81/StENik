@@ -15,7 +15,7 @@ import org.koin.core.component.KoinComponent
 
 class RepositoryMain(
     private val repositoryROOM: RepositoryROOM,
-    private val repositorySharedPreference: RepositorySharedPreference,
+    private val repositorySharedPreferences: RepositorySharedPreferences,
     private val fireStoreDatabase: FireStoreDatabase,
     private val readExcelFile: ReadExcelFile
 ) : KoinComponent {
@@ -92,11 +92,11 @@ class RepositoryMain(
     }
 
 
-    fun getSettings(): SettingsStENik = repositorySharedPreference.getSettings()
+    fun getSettings(): SettingsStENik = repositorySharedPreferences.getSettings()
 
 
     fun putSettings(settingsStENik: SettingsStENik) {
-        repositorySharedPreference.putSettings(settingsStENik)
+        repositorySharedPreferences.putSettings(settingsStENik)
     }
 
 

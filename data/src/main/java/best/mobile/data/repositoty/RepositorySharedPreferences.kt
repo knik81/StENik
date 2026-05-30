@@ -7,7 +7,7 @@ import best.mobile.entities.SharedPrefConst
 import best.mobile.entities.SortedTextBy
 import androidx.core.content.edit
 
-class RepositorySharedPreference(private val sharedPreferences: SharedPreferences) {
+class RepositorySharedPreferences(private val sharedPreferences: SharedPreferences) {
 
     fun getSettings(): SettingsStENik {
         val settingsStENikDefault = SettingsStENik()
